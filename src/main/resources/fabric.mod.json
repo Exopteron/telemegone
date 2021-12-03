@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "telemegone",
+  "version": "${version}",
+
+  "name": "Telemegone",
+  "description": "Remove telemetry with a wonderful mod name",
+  "authors": [
+    "Exopteron"
+  ],
+  "contact": {
+    "sources": "https://github.com/Exopteron/telemegone"
+  },
+  "accessWidener": "telemegone.accesswidener",
+  "license": "GPLv3",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.exopteron.telemegone.Telemegone"
+    ]
+  },
+  "mixins": [
+    "telemegone.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
